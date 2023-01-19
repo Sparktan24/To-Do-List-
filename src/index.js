@@ -2,6 +2,7 @@
 import './style.css';
 import Task from './modules/Task.js';
 import TaskList from './modules/TaskList.js';
+import TaskDone from './modules/TasKDone.js';
 
 const tasksList = new TaskList();
 const generatedElements = document.querySelector('.tasks-container');
@@ -140,6 +141,18 @@ function Listener() {
       }
     });
   });
+
+  const checkboxes = generatedElements.querySelectorAll('.checkbox');
+  checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener('change', (e) => {
+      const { id } = e.target;
+      const index = id.substring(id.indexOf('-') + 1, id.length);
+      const completed = new TaskDone();
+      completed.changeState(index);
+      refresh();
+      Listener();
+    });
+  });
 }// END LISTENER
 
 inputSubmitTaskText.addEventListener('keypress', (e) => {
@@ -159,6 +172,14 @@ inputSubmitTaskBtn.addEventListener('click', () => {
   inputSubmitTaskText.value = '';
   tasksList.newIndex();
   //  generatedElements.replaceChild(renderItemRows(), listContent);
+  refresh();
+  Listener();
+});
+
+const clearAllBtn = document.querySelector('#clear-btn');
+clearAllBtn.addEventListener('click', () => {
+  tasksList.clearCompletedTasks();
+  tasksList.newIndex();
   refresh();
   Listener();
 });
