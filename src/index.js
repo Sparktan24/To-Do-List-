@@ -52,7 +52,7 @@ generatedElements.appendChild(renderBtn());
 
 const inputSubmitTaskBtn = generatedElements.querySelector('#submit-new-item');
 const inputSubmitTaskText = generatedElements.querySelector('#add-new-item');
-const listContent = generatedElements.querySelector('#list-content');
+//  const listContent = generatedElements.querySelector('#list-content');
 
 function Listener() {
   const editBtns = document.querySelectorAll('.edit');
