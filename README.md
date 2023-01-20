@@ -96,15 +96,15 @@ After you're finished please remove all the comments and instructions!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
+IVE DEMO
 
-<!-- ## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://gealsanchez.github.io/LeaderBoard/dist/)
+- [Live Demo Link](https://sparktan24.github.io/To-Do-List-/dist/)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- GETTING STARTED -->
+GETTING STARTED
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
